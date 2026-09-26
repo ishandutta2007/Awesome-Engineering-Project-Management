@@ -55,9 +55,9 @@ Below is a curated tabular breakdown of commercial Professional Services Automat
 
 ## 💻 Open-Source GitHub Projects
 
-Below is a curated list of open-source project management, PSA, ERP, and timesheet repositories, sorted by **GitHub Star Count (Descending)**.
+Below is a curated list of open-source project management, PSA, ERP, and timesheet repositories, sorted by **GitHub Stars_Count (Descending)**.
 
-| Repository | Description & Engineering / PSA Focus | License | GitHub Stars |
+| Repository | Description & Engineering / PSA Focus | License | GitHub_Stars |
 | :--- | :--- | :--- | :--- |
 | 📌 **[Plane](https://github.com/makeplane/plane)** | Modern, high-performance open-source project management & issue tracking alternative to Jira/Linear with Gantt and roadmaps. | Apache-2.0 | [<img src="https://img.shields.io/github/stars/makeplane/plane?style=social&color=white" alt="Plane Stars"/>](https://github.com/makeplane/plane/stargazers) |
 | 💼 **[Odoo](https://github.com/odoo/odoo)** | Comprehensive open-source ERP suite featuring modular project management, timesheets, billing, and resource planning. | LGPL-3.0 | [<img src="https://img.shields.io/github/stars/odoo/odoo?style=social&color=white" alt="Odoo Stars"/>](https://github.com/odoo/odoo/stargazers) |
