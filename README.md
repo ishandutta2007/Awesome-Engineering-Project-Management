@@ -207,3 +207,12 @@ Star the repo if you find it useful!
 **Made for engineering firm leaders, project managers, and open-source advocates.**
 
 Let's keep projects profitable, resources visible, and management tools as open as practical.
+
+## ⭐ Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Engineering-Project-Management&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Engineering-Project-Management_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Engineering-Project-Management_growth.svg">
+  </picture>
+</a>
