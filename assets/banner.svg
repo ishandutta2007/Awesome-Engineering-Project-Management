@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <linearGradient id="accent-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.5" stroke-opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .title {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 44px;
+      fill: url(#text-gradient);
+    }
+    .subtitle {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 19px;
+      fill: #94a3b8;
+    }
+    .tag {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #38bdf8;
+    }
+    .pulse-node {
+      animation: pulse 3s infinite alternate;
+    }
+    @keyframes pulse {
+      0% { r: 4px; opacity: 0.4; }
+      100% { r: 8px; opacity: 1; }
+    }
+    .floating-card {
+      animation: float 6s ease-in-out infinite alternate;
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-10px); }
+    }
+  </style>
+
+  <!-- Background Layer -->
+  <rect width="1200" height="320" rx="16" fill="url(#bg-gradient)"/>
+  <rect width="1200" height="320" rx="16" fill="url(#grid)"/>
+
+  <!-- Dynamic Background Geometric & Flow Elements -->
+  <g opacity="0.6">
+    <!-- Connecting network lines -->
+    <path d="M 800 60 L 950 120 L 1100 80 L 1050 220 L 900 260 L 780 180 Z" fill="none" stroke="#475569" stroke-width="1.5" stroke-dasharray="6,6"/>
+    <path d="M 850 160 L 1000 200 L 1120 140" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.5"/>
+    
+    <!-- Pulsing Nodes -->
+    <circle cx="800" cy="60" r="6" fill="#38bdf8" class="pulse-node" />
+    <circle cx="950" cy="120" r="6" fill="#818cf8" class="pulse-node" />
+    <circle cx="1100" cy="80" r="6" fill="#c084fc" class="pulse-node" />
+    <circle cx="1050" cy="220" r="6" fill="#38bdf8" class="pulse-node" />
+    <circle cx="900" cy="260" r="6" fill="#f43f5e" class="pulse-node" />
+    <circle cx="780" cy="180" r="6" fill="#34d399" class="pulse-node" />
+
+    <!-- Animated / Decorative Flow Bars at the right side background -->
+    <g class="floating-card">
+      <rect x="850" y="80" width="230" height="140" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5" opacity="0.8"/>
+      <rect x="870" y="105" width="80" height="10" rx="5" fill="#38bdf8" opacity="0.9"/>
+      <rect x="870" y="125" width="140" height="8" rx="4" fill="#475569" opacity="0.6"/>
+      <rect x="870" y="140" width="110" height="8" rx="4" fill="#475569" opacity="0.6"/>
+      <rect x="870" y="155" width="160" height="8" rx="4" fill="#475569" opacity="0.6"/>
+      
+      <!-- Chart Bars -->
+      <rect x="870" y="180" width="16" height="25" rx="3" fill="#38bdf8"/>
+      <rect x="895" y="170" width="16" height="35" rx="3" fill="#818cf8"/>
+      <rect x="920" y="185" width="16" height="20" rx="3" fill="#c084fc"/>
+      <rect x="945" y="160" width="16" height="45" rx="3" fill="#34d399"/>
+    </g>
+  </g>
+
+  <!-- Foreground Content Block (Unobstructed Foreground) -->
+  <g transform="translate(60, 0)">
+    <!-- Top Badge Pill -->
+    <g transform="translate(0, 50)">
+      <rect width="280" height="30" rx="15" fill="url(#accent-cyan)"/>
+      <text x="15" y="20" class="tag">🚀 ARCHITECTURE &amp; ENGINEERING PSA / ERP</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="130" class="title">Awesome Engineering</text>
+    <text x="0" y="180" class="title">Project Management</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="225" class="subtitle">Curated Ecosystem of SaaS Platforms, Project Accounting &amp;</text>
+    <text x="0" y="250" class="subtitle">Open-Source PSA Tools for Engineering &amp; Professional Services</text>
+
+    <!-- Lower Accent Line -->
+    <line x1="0" y1="280" x2="650" y2="280" stroke="url(#text-gradient)" stroke-width="2" opacity="0.6"/>
+  </g>
+</svg>
